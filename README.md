@@ -1,9 +1,9 @@
 # SCpy
 Simple python tools for Star Citizen
 
-Star Citizen(https://robertsspaceindustries.com/)
+Star Citizen https://robertsspaceindustries.com/ 
 
-I'm a member of AGB corp(https://robertsspaceindustries.com/orgs/AGBCORP)
+I'm a member of AGB corp https://robertsspaceindustries.com/orgs/AGBCORP
 
 download Python 3.7 here: https://www.python.org/
 

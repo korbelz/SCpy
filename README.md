@@ -5,6 +5,10 @@ Star Citizen(https://robertsspaceindustries.com/)
 
 I'm a member of AGB corp(https://robertsspaceindustries.com/orgs/AGBCORP)
 
+download Python 3.7 here: https://www.python.org/
+
+download this repo, then double click any of the files ending in .py to run it.
+
 ## POI.py Point of Interest database
 
 Libary/database file for use in other scripts.

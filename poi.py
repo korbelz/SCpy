@@ -1,99 +1,105 @@
 #comment section
-#author: Korbelz
+#author: Korbelz , AGB Corp
+#Feedback: Discord: Korbelz#3504
 #current scope: points of intrest menu for SC
 
-star = ['Stanton', 'Sun']
 
-star_sel = int(input(f"Select star system by #: 0 - {star[0]}, 1 - {star[1]}: " ))
+def here():
+    star = ['Stanton', 'Sun']
 
-print (f'You selected the {star[star_sel]} system')
+    star_sel = int(input(f"Select star system by #: 0 - {star[0]}: " ))
 
-#planet_selction
-if star_sel == 0: 
-    planet_list = ['Crusader', 'Hurston']
-else:
-    planet_list = ['Earth', 'Mars']
+    print (f'You selected the {star[star_sel]} system')
 
-plan_sel = int(input(f"Select planetary system by #: 0 - {planet_list[0]}, 1 - {planet_list[1]}: " ))
+    #planet_selction
+    if star_sel == 0: 
+        planet_list = ['Crusader', 'Hurston']
+    else:
+        planet_list = ['Earth', 'Mars']
 
-print (f'You selected the {planet_list[plan_sel]} planetary system')
+    plan_sel = int(input(f"Select planetary system by #: 0 - {planet_list[0]}, 1 - {planet_list[1]}: " ))
 
-argument = planet_list[plan_sel]
+    print (f'You selected the {planet_list[plan_sel]} planetary system')
 
-#moon selection
+    argument = planet_list[plan_sel]
 
-Crusader_moons = ['Crusader' 'Yela', 'Daymar','Cellin','Delamar','CRU']
+    #moon selection
 
-Hurston_moons = ['Hurston', 'Aberdeen','Arial','Ita','Magda','HUR']
+    Crusader_moons = ['Crusader', 'Yela', 'Daymar','Cellin','Delamar','CRU']
 
-Earth_moons = ['Hurston', 'Aberdeen','Arial','Ita','Magda','HUR']
+    Hurston_moons = ['Hurston', 'Aberdeen','Arial','Ita','Magda','HUR']
 
-Mars_moons = ['Hurston', 'Aberdeen','Arial','Ita','Magda','HUR']
+    Earth_moons = ['Hurston', 'Aberdeen','Arial','Ita','Magda','HUR']
 
-def plan_to_moons(argument):
-    switcher = {
-        "Crusader": Crusader_moons,
-        "Hurston": Hurston_moons,
-        "Earth": Earth_moons,
-        "Mars": Mars_moons,
-    }
-    return switcher.get(argument, "nothing")
+    Mars_moons = ['Hurston', 'Aberdeen','Arial','Ita','Magda','HUR']
 
-current_moon = (plan_to_moons(argument))
+    def plan_to_moons(argument):
+        switcher = {
+            "Crusader": Crusader_moons,
+            "Hurston": Hurston_moons,
+            "Earth": Earth_moons,
+            "Mars": Mars_moons,
+        }
+        return switcher.get(argument, "nothing")
 
-moon_sel = int(input(f"Select planet or moon by #: 0 - {current_moon[0]}, 1 - {current_moon[1]}, 2 - {current_moon[2]}, 3 - {current_moon[3]}, 4 - {current_moon[4]}, 5 - {current_moon[5]}: " ))
+    current_moon = (plan_to_moons(argument))
 
-print (f'You selected the {current_moon[moon_sel]} planet or moon')
+    moon_sel = int(input(f"Select planet or moon by #: 0 - {current_moon[0]}, 1 - {current_moon[1]}, 2 - {current_moon[2]}, 3 - {current_moon[3]}, 4 - {current_moon[4]}, 5 - {current_moon[5]}: " ))
 
-argument = current_moon[moon_sel]
-#POI selction
+    print (f'You selected the {current_moon[moon_sel]} planet or moon')
 
-Crusader = ['Port Olisar', 'one', 'two', 'three', 'four', 'five', 'six' ]
+    argument = current_moon[moon_sel]
+    #POI selction
 
-Yela = ['GrimHEX', 'ArcCorp', 'Benson Mining', 'Deakins Research', 'Jumptown', 'five', 'six' ]
+    Crusader = ['Port Olisar', 'one', 'two', 'three', 'four', 'five', 'six' ]
 
-Daymar = ['Kudre Ore', 'ArcCorp', 'Bountiful Harvest', 'Shubin Mining', 'four', 'five', 'six' ]
+    Yela = ['GrimHex', 'ArcCorp Mining Area 157', 'Benson Mining', 'Deakins Research', 'Jumptown', 'five', 'six' ]
 
-Cellin = ['Tram and Myers', 'Gallete Family Farms', 'Terra Mills', 'Hickes Research Outpost', 'four', 'five', 'six' ]
+    Daymar = ['Kudre Ore', 'ArcCorp Mining Area 141', 'Bountiful Harvest', 'Shubin Mining', 'four', 'five', 'six' ]
 
-Delamar = ['Levski', 'one', 'two', 'three', 'four', 'five', 'six' ]
+    Cellin = ['Tram and Myers', 'Gallete Family Farms', 'Terra Mills', 'Hickes Research Outpost', 'four', 'five', 'six' ]
 
-CRU = ['L2', 'L4', 'L5', 'three', 'four', 'five', 'six' ]
+    Delamar = ['Levski', 'one', 'two', 'three', 'four', 'five', 'six' ]
 
-Hurston = ['Lorville', 'HMC Edmond', 'HMC Hadley', 'HMC Oparei', 'HMC Pinewood', 'HMC Stanhope', 'HMC Thedus' ]
+    CRU = ['CRU L2', 'CRU L4', 'CRU L5', 'three', 'four', 'five', 'six' ]
 
-Aberdeen = ['HMC Anderson', 'HMC Norgaard', 'two', 'three', 'four', 'five', 'six' ]
+    Hurston = ['Lorville', 'HMC Edmond', 'HMC Hadley', 'HMC Oparei', 'HMC Pinewood', 'HMC Stanhope', 'HMC Thedus' ]
 
-Arial = ['HMC Bezdek', 'HMC Lathan', 'two', 'three', 'four', 'five', 'six' ]
+    Aberdeen = ['HMC Anderson', 'HMC Norgaard', 'two', 'three', 'four', 'five', 'six' ]
 
-Ita = ['HMC Ryder', 'HMC Woodruff', 'two', 'three', 'four', 'five', 'six' ]
+    Arial = ['HMC Bezdek', 'HMC Lathan', 'two', 'three', 'four', 'five', 'six' ]
 
-Magda = ['HMC Hahn', 'HMC Periman', 'two', 'three', 'four', 'five', 'six' ]
+    Ita = ['HMC Ryder', 'HMC Woodruff', 'two', 'three', 'four', 'five', 'six' ]
 
-HUR = ['L1', 'L2', 'L3', 'L4', 'L5', 'five', 'six' ]
+    Magda = ['HMC Hahn', 'HMC Periman', 'two', 'three', 'four', 'five', 'six' ]
 
-def moons_to_poi(argument):
-    switcher = {
-        "Crusader": Crusader,
-        "Yela": Yela,
-        "Daymar": Daymar,
-        "Cellin": Cellin,
-        "Delamar": Delamar,
-        "CRU": CRU,
-        "Hurston": Hurston,
-        "Aberdeen": Aberdeen,
-        "Arial": Arial,
-        "Ita": Ita,
-        "Magda": Magda,
-        "HUR": HUR,
-    }
-    return switcher.get(argument, "nothing")
+    HUR = ['HUR L1', 'HUR L2', 'HUR L3', 'HUR L4', 'HUR L5', 'five', 'six' ]
 
-current_poi = (moons_to_poi(argument))
-#print (current_poi)
+    def moons_to_poi(argument):
+        switcher = {
+            "Crusader": Crusader,
+            "Yela": Yela,
+            "Daymar": Daymar,
+            "Cellin": Cellin,
+            "Delamar": Delamar,
+            "CRU": CRU,
+            "Hurston": Hurston,
+            "Aberdeen": Aberdeen,
+            "Arial": Arial,
+            "Ita": Ita,
+            "Magda": Magda,
+            "HUR": HUR,
+        }
+        return switcher.get(argument, "nothing")
 
-poi_sel = int(input(f"Select planet or moon by #: 0 - {current_poi[0]}, 1 - {current_poi[1]}, 2 - {current_poi[2]}, 3 - {current_poi[3]}, 4 - {current_poi[4]}, 5 - {current_poi[5]}, 6 - {current_poi[6]}: " ))
+    current_poi = (moons_to_poi(argument))
+    #print (current_poi)
 
-print (f'You selected the {current_poi[poi_sel]} point of trade')
+    poi_sel = int(input(f"Select planet or moon by #: 0 - {current_poi[0]}, 1 - {current_poi[1]}, 2 - {current_poi[2]}, 3 - {current_poi[3]}, 4 - {current_poi[4]}, 5 - {current_poi[5]}, 6 - {current_poi[6]}: " ))
 
-input('Press ENTER to exit')
+    #print (f'You selected the {current_poi[poi_sel]} point of trade')
+
+    here_loc = current_poi[poi_sel] 
+    return here_loc
+
+#input('Press ENTER to exit')

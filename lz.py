@@ -70,7 +70,7 @@ while i_loop < 24:
 
     HMC_Stanhope = ['428', 'Yes 1 medium 1 small', 'No', 'Yes', '15m tall poles at LZ, Ocean on 1 side, raising terrain on 3 other sides.']
 
-    HMC_Thedus = ['-92', 'Yes 1 medium 1 small', 'No', 'Yes', '15m tall towers']
+    HMC_Thedus = ['2367', 'Yes 1 medium 1 small', 'No', 'Yes', '15m tall poles at LZ, Wasteland biome']
 
     HMC_Anderson = ['2570', 'Yes 1 medium 1 small', 'No', 'Yes', 'Nothing here, Mountainous terrian in all directions, 15m tall poles at LZ']
 

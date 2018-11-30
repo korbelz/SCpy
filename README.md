@@ -14,6 +14,6 @@ download this repo, then double click any of the files ending in .py to run it.
 Libary/database file for use in other scripts.
 
 
-## mp_one.py Mission Planning tool v0.1
+## lz.py Mission Planning tool v0.1
 
 provides basic info about POIs for mission planning. (MSL alt, nav hazards, etc)

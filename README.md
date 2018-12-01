@@ -17,3 +17,5 @@ Libary/database file for use in other scripts.
 ## lz.py Mission Planning tool v0.1
 
 provides basic info about POIs for mission planning. (MSL alt, nav hazards, etc)
+
+Example output for lz.py is over on the wiki tab. 
